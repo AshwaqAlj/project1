@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #f8e1d7;
+}
+@media(min-width: 901px) and (max-width: 2100px){
+    .snowdrop-post{
+        display:grid;
+        border: 2px double rgb(173, 124, 49);
+           grid-template-columns: 300px 300px 300px ;
+           grid-template-rows: 300px ;
+           grid-template-areas: 
+           "hd hd hd hd hd hd hd hd"
+           "pos pos pos pos pos pos pos pos"
+           "in in in in in in in in"
+           "so so so so so so so so";
+    }
+    }
+      @media(min-width: 751px) and (max-width: 1000px){
+        .main-page{
+        display:grid;
+        border: 2px solid rgb(147, 197, 227);
+           grid-template-columns: 300px 300px;
+           grid-template-rows: 250px;
+           grid-template-areas: 
+           "hd hd hd"
+           "pos pos pos"
+           "in in in"
+           "so so so";
+        }
+      }
+      @media(min-width: 50px) and (max-width: 750px){
+        .main-page{
+          /* Step 1: Set display to grid */
+        display:grid;
+        border: 2px solid rgb(255, 255, 255);
+           grid-template-columns: 300p;
+           grid-template-rows: 250px;
+           grid-template-areas: 
+           "hd"
+           "pos "
+           "in"
+           "so";
+        }
+      }
+    .header{
+        border: 5px double #98583b;
+        font-family: 'Yellowtail', cursive;
+        text-align: center;
+        color: #a35b3c;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        grid-area:hd;
+    }
+    .post{
+        grid-area: pos;
+        font-family: 'Philosopher', sans-serif;
+        font-size: x-large;
+        text-align: center;
+        color: #6f3b23;
+        padding-top: 50px;
+    }
+    .writer-info {
+        grid-area: in ;
+        display: flex;
+        padding-top: 50px;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        background: #4c2614
+        border-radius: 25px;
+        font-family: 'Caveat', cursive;
+    }
+    .name{
+        font-size: 20px;
+    }
+    .bio{
+        font-size: 20px;
+        }
+    .titele{
+        text-align: left;
+        color: #66351f;
+    }
+    img{
+        
+        height: 80px;
+        width: 80px;
+        object-fit: cover;
+        align-items: baseline;
+        background-position: left left;
+        background-size: cover;
+        border: 5px double rgb(51, 6, 6);
+        border-radius: 50px;
+    }
+    .social{
+        grid-area: so ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 5px double #371c0f;
+        text-align: center;
+        border-radius: 25px;
+    }
+    #contacts{
+        font-family: 'Caveat', cursive;
+        text-align: center;
+        padding-left: 50px;
+    }
+    .back a{
+        font-size: 20px;
+        text-align: center;
+        color: #371c0f;
+    }
+    a:hover{
+        color: rgb(179, 189, 199);
+    }

@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Dancing+Script:wght@700&family=EB+Garamond:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap');
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+  }
+header, .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    border-radius: 25px;
+    background-color: rgb(234, 148, 177)
+}
+body{
+    background-color: rgb(248, 223, 223);
+    padding: 25px;
+}
+.dark-theme{
+    background-color: black;
+    color: white;
+}
+nav, button{
+    font-size: 20px;
+    color: rgb(109, 44, 44);
+    text-decoration: none;
+}
+.navbar{
+    list-style: none;
+}
+.navbar, li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.navbar, li, button{
+    transition: all 0.3s ease 0s;
+    font-family: 'Sawarabi Mincho', serif;
+}
+.navbar, li, button:hover{
+    color: rgb(68, 44, 23);
+
+}
+button {
+    padding: 9px 25px;
+    background-color: rgb(255, 232, 232);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: rgb(240, 140, 140);
+}
+@media(min-width: 901px) and (max-width: 2100px){
+.main-page{
+    display:grid;
+    border: 2px solid blanchedalmond;
+    border-radius: 25px;
+       grid-template-columns: 300px 300px 300px ;
+       grid-template-rows: 250px ;
+       grid-template-areas: 
+       "hd hd hd hd hd hd hd hd"
+       "con con con con con con con con"
+       "ft ft ft ft ft ft ft ft";
+}
+}
+  @media(min-width: 751px) and (max-width: 1000px){
+    .main-page{
+    display:grid;
+    border: 2px solid rgb(147, 197, 227);
+    border-radius: 25px;
+       grid-template-columns: 300px 300px;
+       grid-template-rows: 250px;
+       grid-template-areas: 
+       "hd hd hd"
+       "con con con"
+       "ft ft ft";
+    }
+  }
+  @media(min-width: 50px) and (max-width: 750px){
+    .main-page{
+    display:grid;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 25px;
+       grid-template-columns: 300p;
+       grid-template-rows: 250px;
+       grid-template-areas: 
+       "hd"
+       "con "
+       "ft";
+    }
+  }
+.header{
+    border: 1px #c38484;
+    font-family: 'Caveat', cursive;
+    text-align: center;
+    color: #a35b3c;
+    padding-top: 50px;
+    grid-area:hd;
+}
+.card-cont{
+    grid-area: con;
+}
+.contacts{
+    font-family: 'Caveat', cursive;
+    padding-top: 25px;
+}
+.linkedin img{
+    width:55px;
+    height:50px;
+    border:4px; 
+}
+.instagram img{
+    width:55px;
+    height:50px;
+    border:4px; 
+}
+.footer {
+    background: rgb(179, 102, 128);
+    grid-area:ft;
+    border-radius: 25px;
+    text-align: center;
+    color: black;
+    font-family: 'Caveat', cursive;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+a:hover{
+    color: rgb(179, 189, 199);
+}

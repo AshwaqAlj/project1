@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.card-cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.card {
+    width: 250px;
+    height: auto;
+    position: relative;
+    background: rgb(234, 148, 177);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    padding: 20px;
+    transition: all .3s ease-in;
+    }
+    .card > * {
+        padding: 10px;
+    }
+    img{
+        height: 150px;
+        width: 150px;
+        object-fit: cover;
+        background-position: center center;
+        background-size: cover;
+        border: 5px double rgb(255, 238, 238);
+        border-radius: 70px;
+
+    }
+    .card .c-title{
+        padding: 20px 10px;
+        font-size: 1.5rem;
+        text-shadow: 1px 0px 2px rgb(225, 165, 165);
+    }
+    .card .c-text{
+        border: 2px wheat;  
+        line-height: 20px;
+    }
+    .card:nth-child(1) .card-image{
+        background-image: url(crocus-flower.jpg); 
+    }
+    .card:nth-child(2) .c-pic{
+        background-image: url(crocus-flower.jpg);
+    }
+    .card:nth-child(3) .c-pic{
+        background-image: url(image.png);
+    }
+    .card:nth-child(4) .c-pic{
+        background-image: url(Daphne-flower.jpg);
+    }
+    .card:hover{
+        background-color: rgb(254, 226, 226);
+        color: rgb(0, 0, 0);
+        box-shadow: 0px 0px 11px 5px black;
+    }
